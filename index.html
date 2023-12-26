@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conselhos para seu dia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div id="game-container">
+        <h1 id="advice-text">Conselhos para seu dia
+        </h1>
+        <button onclick="novoConselho()">Próximo Conselho</button>
+      </div>
+
+    <script>
+        var conselhos = [
+            "Não se entregue tanto para alguém a ponto de sentir falta de você mesmo.",
+            "Dê mais às pessoas do que elas esperam e faça com alegria.",
+            "Fale devagar, mas pense com rapidez.",
+            "Quando você se der conta de que cometeu um erro, tome as atitudes necessárias.",
+            "Não deixe uma pequena disputa ferir uma grande amizade.",
+            "Tantas vezes parece que é o fim, mas, pode ser um recomeço.",
+            "Antes de tomar uma decisão, ore!",
+            "Seja grato!",
+            "Seja humilde. Errou? Peça perdão.",
+            "Seus pais ESTARÃO SEMPRE AO SEU LADO, independentemente de suas escolhas.",
+            "Viva sua vida intensamente NÃO SE DEIXE ABALAR por decisões erradas.",
+            "LUTE POR SEUS SONHOS SEMPRE!",
+            "Não se pode jogar uma pedra para cima e esperar que caia uma flor.",
+            "Sempre existe alguém te admirando.",
+            "Nunca limite a sua capacidade de aperfeiçoamento e crescimento pessoal.",
+            "Lute por seus ideais, mas, faça isso sem ferir a dignidade do próximo.",
+            "Palavras que não têm o peso das atitudes, o vento leva.",
+            "Não fique reclamando da vida pela falta de coisas pequenas pois, as mais importantes Deus já te deu.",
+            "Paciência é a chave de muitas vitórias.",
+            "Amor, respeito e atenção são a base de uma boa relação.",
+            "Não finja ser o que não é!",
+            "Prefiro tentar e perder do que nunca tentar...",
+            "Quem é generoso será abençoado, pois reparte o seu pão com o pobre.",
+            "Do sábio vem palavras sábias.",
+            "Não se desgaste tentando ficar rico tenha discernimento para saber quando parar.",
+            "Você tem a liberdade de mudar qualquer rumo da sua vida sem ninguém atrapalhar.",
+            "O sucesso na sua vida depende de um propósito profundo e confiável.",
+            "Confie no Senhor de todo seu coração e não se apoie em seu próprio entendimento."
+
+
+
+
+
+
+
+          
+      
+          // Adicione mais conselhos conforme necessário
+        ];
+      
+        function novoConselho() {
+          var index = Math.floor(Math.random() * conselhos.length);
+          document.getElementById("advice-text").innerHTML = conselhos[index];
+        }
+      </script>
+    
+    <header></header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo"></h1>
+            <p class="apresentacao__conteudo__texto"></p>
+            
+        </section>
+       
+    <footer></footer>
+</body>
+
+</html>
